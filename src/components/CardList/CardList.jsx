@@ -1,9 +1,8 @@
 import Card from '../Card/Card';
-import './CardList.css';
 
 function CardList({ cards }) {
   return (
-    <div className="list">
+    <div className="flex gap-6 flex-wrap justify-center">
       {cards.map((item) => (
         <Card
           key={item.id}
@@ -15,4 +14,5 @@ function CardList({ cards }) {
     </div>
   );
 }
+
 export default CardList;
